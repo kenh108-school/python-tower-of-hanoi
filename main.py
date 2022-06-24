@@ -1,6 +1,6 @@
 import time
 
-num_disks = 10
+num_disks = 20
 num_moves = 0
 
 def tower_of_hanoi(disk_num, source, spare, dest):
@@ -20,8 +20,9 @@ tower_of_hanoi(num_disks, 'A', 'B', 'C')
 end_time = time.time()
 
 elapsed_time = end_time - start_time
+print("Number of disks = " + str(num_disks))
 print("Execution time = " + str(elapsed_time) + "s")
-print("Number of moves = " + str(num_moves) + "s")
+print("Number of moves = " + str(num_moves) + "m")
 
 time_per_move = elapsed_time / num_moves
 print("Time per move = " + str(time_per_move) + "s/m")
