@@ -20,8 +20,8 @@ tower_of_hanoi(num_disks, 'A', 'B', 'C')
 end_time = time.time()
 
 elapsed_time = end_time - start_time
-print("Execution time = " + str(elapsed_time))
-print("Number of moves = " + str(num_moves))
+print("Execution time = " + str(elapsed_time) + "s")
+print("Number of moves = " + str(num_moves) + "s")
 
 time_per_move = elapsed_time / num_moves
-print("Time per move = " + str(time_per_move))
+print("Time per move = " + str(time_per_move) + "s/m")
