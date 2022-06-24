@@ -3,7 +3,7 @@ def tower_of_hanoi(disk_num, source, spare, dest):
         return
     
     tower_of_hanoi(disk_num - 1, source, dest, spare)
-    print("Move disk " + int(disk_num) + " from pole " + int(source) + " to pole " + int(dest) + " using pole " + int(spare) + ".")
+    print("Move disk " + str(disk_num) + " from pole " + source + " to pole " + dest + " using pole " + spare + ".")
     tower_of_hanoi(disk_num - 1, spare, source, dest)
 
 
