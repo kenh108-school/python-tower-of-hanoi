@@ -5,11 +5,11 @@ num_moves = 0
 
 def tower_of_hanoi(disk_num, source, spare, dest):
     global num_moves
-    num_moves += 1
 
     if disk_num == 0:
         return
     
+    num_moves += 1
     tower_of_hanoi(disk_num - 1, source, dest, spare)
     print("Move disk " + str(disk_num) + " from pole " + source + " to pole " + dest + " using pole " + spare + ".")
     tower_of_hanoi(disk_num - 1, spare, source, dest)
