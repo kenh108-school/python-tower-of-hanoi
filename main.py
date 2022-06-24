@@ -1,6 +1,11 @@
 import time
+import sys
 
-num_disks = 20
+if len(sys.argv) == 2:
+    num_disks = int(sys.argv[1])
+else :
+    num_disks = 10
+
 num_moves = 0
 
 def tower_of_hanoi(disk_num, source, spare, dest):
