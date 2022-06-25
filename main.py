@@ -1,7 +1,7 @@
 import time
 import sys
 
-if len(sys.argv) == 2:
+if len(sys.argv) == 2 and sys.argv[1].isdigit():
     num_disks = int(sys.argv[1])
 else :
     num_disks = 10
